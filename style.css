@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+}
+
+header {
+    border: solid black;
+    height: 10vh;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main {
+    
+    height: 80vh;
+
+
+}
+
+footer {
+    border: solid black;
+    height: 10vh;
+}
+
+.quadrado {
+    width: 50px;
+    height: 50px;
+}
+
+.container {
+    width: 50;
+    background-color: blueviolet;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.vermelho {
+    background-color: red;
+    border-radius: 90%;
+}
+
+.verde {
+    background-color: green;
+    border-radius: 90%;
+}
+
+.azul {
+    background-color: blue;
+    border-radius: 90%;
+}
