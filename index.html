@@ -1,44 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Countdown</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
-    <header>
-
-        <h1>Meu Site</h1>
-
-        <nav>
-            <a href="#">sobre nós</a>
-            <a href="#">contato</a>
-            <a href="#">equipe</a>
-        </nav>
-    </header>
-
-    <main>
-
-        <h2>Conheça nosso site</h2>
-        <p>Temos muitas coisas aqui</p>
-
-        <div class="containers">
-            <div class="quadrado vermelho"></div>
-            <div class="quadrado verde"></div>
-            <div class="quadrado azul"></div>
+    <div class="content">
+        <div>
+            <h1 class="title">Reference Date</h1>
+            <input type="date" name="date-input" id="date-input">
         </div>
-
-    </main>
-
-    <footer>
-
-        <p>Feito por sas</p>
-
-    </footer>
-
-    <script src="scripts.js"></script>
+        <div>
+            <h1 class="title">Countdown</h1>
+            <p class="description" id="output">...</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
