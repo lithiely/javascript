@@ -115,3 +115,28 @@ const dataHoje = new Date().getTime()
 
 let resultado = calculateRemainingTime(dataReferencia, dataHoje)
 console.log(resultado)
+
+
+//foir --> enquanto
+
+for (let contador =0; contador < 10000; contador = contadpor = contador++) {
+    console.log ("victor" + contador)
+}
+
+//While --> enquanto
+
+let contagem = 0
+while (contagem < 100) {
+    console.log("victor")
+    contagem++
+}
+
+
+
+for (let i= 1; i <= 19; i++ ) {
+    console.log( contagem )
+}
+
+for (let i=1; i <= 1 < 10; i++) {
+    console.log (tabuada + contagem )
+}
