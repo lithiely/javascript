@@ -1,142 +1,60 @@
-const input = document.getElementById("date-input")
-const output = document.getElementById("output")
+let n1 = 18
+let n2 = 222
+let resultadosoma = somar(n1, n2)
 
-const ONE_SECOND = 1000
-const ONE_MINUTE = ONE_SECOND * 60
-const ONE_HOUR = ONE_MINUTE * 60
-const ONE_DAY = ONE_HOUR * 24
-const ONE_MONTH = ONE_DAY * 30
-const ONE_YEAR = ONE_MONTH * 12
+function somar(n1, n2) {
+    return n1 + n2
+}
+console.log(`a soma de ${n1} + ${n2} é ${resultadosoma}`)
 
-function calculateRemainingTime(referenceDate, todayDate) {
-    
-    let timeLeft = referenceDate - todayDate
 
-    let yearsLeft = 0
-    while (timeLeft > ONE_YEAR) {
-        yearsLeft++
-        timeLeft -= ONE_YEAR
-    }
 
-    let monthsLeft = 0
-    while (timeLeft > ONE_MONTH) {
-        monthsLeft++
-        timeLeft -= ONE_MONTH
-    }
+let n3 = 18
+let n4 = 222
 
-    let daysLeft = 0
-    while (timeLeft > ONE_DAY) {
-        daysLeft++
-        timeLeft -= ONE_DAY
-    }
+let resultadodivisao = dividir(n3, n4)
 
-    let hoursLeft = 0
-    while (timeLeft > ONE_HOUR) {
-        hoursLeft++
-        timeLeft -= ONE_HOUR
-    }
+function dividir(n1, n2) {
+    return n1 / n2
+}
+console.log(`a divisão de ${n3} / ${n4} é ${resultadodivisao}`)
 
-    let minutesLeft = 0
-    while (timeLeft > ONE_MINUTE) {
-        minutesLeft++
-        timeLeft -= ONE_MINUTE
-    }
 
-    let secondsLeft = 0
-    while (timeLeft > ONE_SECOND) {
-        secondsLeft++
-        timeLeft -= ONE_SECOND
-    }
 
-    return {
-        yearsLeft,
-        monthsLeft,
-        daysLeft,
-        hoursLeft,
-        minutesLeft,
-        secondsLeft
-    }
+let n5 = 18
+let n6 = 222
+
+let resultadomultiplicacao = multiplicar(n5, n6)
+
+function multiplicar(n1, n2) {
+    return n1 * n2
+}
+console.log(`a multiplicaçao de ${n5} * ${n6} é ${resultadomultiplicacao}`)
+
+
+
+let n7 = 18
+let n8 = 222
+
+let resultadosubtracao = subtrair(n7, n8)
+
+function subtrair(n1, n2) {
+    return n1 - n2
+}
+console.log(`a subtração de ${n7} - ${n8} é ${resultadosubtracao}`)
+
+
+
+
+let n9 = 18
+let n10 = 222
+
+let resultadoelevar = elevar(n9, n10)
+
+function elevar(n1, n2) {
+    return n1 ** n2
+
 }
 
-function textBuilder(remainingTime) {
-    let result = []
+console.log(`a potenciação de ${n9} - ${n10} é ${resultadoelevar}`)
 
-    if (remainingTime.yearsLeft > 0) {
-        if (remainingTime.yearsLeft > 1) {
-            result.push(`${yearsLeft} years`)
-        } else {
-            result.push(`${yearsLeft} year`)
-        }
-    }
-
-    if (remainingTime.monthsLeft > 0) {
-        if (remainingTime.monthsLeft > 1) {
-            result.push(`${monthsLeft} months`)
-        } else {
-            result.push(`${monthsLeft} month`)
-        }
-    }
-
-    if (remainingTime.daysLeft > 0) {
-        if (remainingTime.daysLeft > 1) {
-            result.push(`${daysLeft} days`)
-        } else {
-            result.push(`${daysLeft} day`)
-        }
-    }
-
-    if (remainingTime.hoursLeft > 0) {
-        if (remainingTime.hoursLeft > 1) {
-            result.push(`${hoursLeft} hours`)
-        } else {
-            result.push(`${hoursLeft} hour`)
-        }
-    }
-
-    if (remainingTime.minutesLeft > 0) {
-        if (remainingTime.minutesLeft > 1) {
-            result.push(`${minutesLeft} minutes`)
-        } else {
-            result.push(`${minutesLeft} minute`)
-        }
-    }
-
-    if (remainingTime.secondsLeft > 0) {
-        if (remainingTime.secondsLeft > 1) {
-            result.push(`${secondsLeft} minutes`)
-        } else {
-            result.push(`${secondsLeft} minute`)
-        }
-    }
-}
-
-const dataReferencia = new Date("2028", "01", "01").getTime()
-const dataHoje = new Date().getTime()
-
-let resultado = calculateRemainingTime(dataReferencia, dataHoje)
-console.log(resultado)
-
-
-//foir --> enquanto
-
-for (let contador =0; contador < 10000; contador = contadpor = contador++) {
-    console.log ("victor" + contador)
-}
-
-//While --> enquanto
-
-let contagem = 0
-while (contagem < 100) {
-    console.log("victor")
-    contagem++
-}
-
-
-
-for (let i= 1; i <= 19; i++ ) {
-    console.log( contagem )
-}
-
-for (let i=1; i <= 1 < 10; i++) {
-    console.log (tabuada + contagem )
-}
